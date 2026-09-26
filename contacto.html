@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacto y solicitud de consulta para Veterinaria Huellitas.">
+  <title>Veterinaria Huellitas | Contacto</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/logo-patita.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-body-tertiary">
+  <nav class="navbar navbar-expand-md bg-primary fixed-top shadow" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"><img src="imagenes/logo-patita.svg" alt="" width="34" height="34">Veterinaria Huellitas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+            <ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="servicio1.html">Consulta y prevención</a></li><li><a class="dropdown-item" href="servicio2.html">Diagnóstico y vacunación</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="otros-servicios.html">Otros servicios</a></li></ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+        </ul>
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/525531447058?text=Hola%2C%20%C2%BFme%20podr%C3%ADas%20brindar%20mayores%20informes%20acerca%20de%20los%20servicios%20y%20costos%3F%20%F0%9F%90%BE%F0%9F%92%95" target="_blank"><img alt="Chat on WhatsApp" src="imagenes/WhatsAppButtonGreenLarge.svg" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5">
+    <section class="bg-info-subtle py-5">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <nav aria-label="Ruta de navegación"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Inicio</a></li><li class="breadcrumb-item active" aria-current="page">Contacto</li></ol></nav>
+            <span class="badge rounded-pill text-bg-primary">Estamos para orientarte</span>
+            <h1 class="display-4 fw-bold my-3">Cuéntanos cómo podemos ayudar a tu mascota</h1>
+            <p class="lead">Completa el formulario con tus datos y los de tu compañero. El equipo de Huellitas se pondrá en contacto para confirmar la atención.</p>
+            <div class="alert alert-warning" role="alert"><strong>¿Es una urgencia?</strong> No esperes respuesta del formulario. Llama directamente al <a class="alert-link" href="tel:+525555555555">55 5555 5555</a>.</div>
+          </div>
+          <div class="col-lg-6"><img src="imagenes/mascotas-clinica-hero.png" class="img-fluid rounded-4 shadow" alt="Mascotas de Veterinaria Huellitas en la recepción"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-8">
+          <div class="card border-0 shadow">
+            <div class="card-header bg-primary text-white p-4"><h2 class="h3 mb-1">Solicitud de información y consulta</h2><p class="mb-0 text-white-50">Los campos marcados con * son obligatorios.</p></div>
+            <div class="card-body p-4 p-lg-5">
+              <form action="https://formspree.io/f/xeaorpvy" method="POST">
+                <fieldset class="mb-5">
+                  <legend class="h4 border-bottom pb-2 mb-4">1. Datos del posible cliente</legend>
+                  <div class="row g-3">
+                    <div class="col-md-6"><label for="nombre" class="form-label">Nombre completo *</label><input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" required></div>
+                    <div class="col-md-6"><label for="telefono" class="form-label">Teléfono *</label><input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel" placeholder="55 1234 5678" pattern="[0-9 +()-]{10,20}" required><div class="form-text">Incluye lada si te encuentras fuera de la Ciudad de México.</div></div>
+                    <div class="col-md-6"><label for="correo" class="form-label">Correo electrónico *</label><input type="email" class="form-control" id="correo" name="correo" autocomplete="email" placeholder="nombre@correo.com" required></div>
+                    <div class="col-md-6"><label for="contactoPreferido" class="form-label">Medio de contacto preferido *</label><select class="form-select" id="contactoPreferido" name="contacto_preferido" required><option value="" selected disabled>Selecciona una opción</option><option value="telefono">Llamada telefónica</option><option value="whatsapp">WhatsApp</option><option value="correo">Correo electrónico</option></select></div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="mb-5">
+                  <legend class="h4 border-bottom pb-2 mb-4">2. Datos de la mascota</legend>
+                  <div class="row g-3">
+                    <div class="col-md-6"><label for="mascota" class="form-label">Nombre de la mascota *</label><input type="text" class="form-control" id="mascota" name="mascota" required></div>
+                    <div class="col-md-6"><label for="especie" class="form-label">Especie *</label><select class="form-select" id="especie" name="especie" required><option value="" selected disabled>Selecciona una especie</option><option>Perro</option><option>Gato</option><option>Ave</option><option>Pequeño mamífero</option><option>Reptil</option><option>Otra especie</option></select></div>
+                    <div class="col-md-6"><label for="raza" class="form-label">Raza o variedad</label><input type="text" class="form-control" id="raza" name="raza" placeholder="Si la conoces"></div>
+                    <div class="col-sm-6 col-md-3"><label for="edad" class="form-label">Edad aproximada</label><input type="number" class="form-control" id="edad" name="edad" min="0" max="100" step="1"></div>
+                    <div class="col-sm-6 col-md-3"><label for="unidadEdad" class="form-label">Unidad</label><select class="form-select" id="unidadEdad" name="unidad_edad"><option value="anios">Años</option><option value="meses">Meses</option></select></div>
+                    <div class="col-md-6"><label for="sexo" class="form-label">Sexo</label><select class="form-select" id="sexo" name="sexo"><option value="" selected>No especificado</option><option>Hembra</option><option>Macho</option><option>Desconocido</option></select></div>
+                    <div class="col-md-6"><label for="primeraVisita" class="form-label">¿Es su primera visita? *</label><select class="form-select" id="primeraVisita" name="primera_visita" required><option value="" selected disabled>Selecciona una opción</option><option value="si">Sí</option><option value="no">No</option></select></div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                  <legend class="h4 border-bottom pb-2 mb-4">3. Información de la consulta</legend>
+                  <div class="row g-3">
+                    <div class="col-md-6"><label for="servicio" class="form-label">Servicio de interés *</label><select class="form-select" id="servicio" name="servicio" required><option value="" selected disabled>Selecciona un servicio</option><option>Consulta general</option><option>Medicina preventiva</option><option>Vacunación</option><option>Pruebas y diagnóstico</option><option>Atención para aves</option><option>Orientación nutricional</option><option>Higiene y bienestar</option><option>Otro servicio</option></select></div>
+                    <div class="col-md-3"><label for="fecha" class="form-label">Fecha preferida</label><input type="date" class="form-control" id="fecha" name="fecha_preferida"></div>
+                    <div class="col-md-3"><label for="horario" class="form-label">Horario</label><select class="form-select" id="horario" name="horario"><option value="">Indistinto</option><option>Mañana</option><option>Tarde</option></select></div>
+                    <div class="col-12"><label for="motivo" class="form-label">Motivo de consulta, síntomas o dudas *</label><textarea class="form-control" id="motivo" name="motivo" rows="5" maxlength="1000" placeholder="Describe qué has observado, desde cuándo ocurre y cualquier dato que consideres importante." required></textarea><div class="form-text">No incluyas información bancaria ni contraseñas.</div></div>
+                    <div class="col-12"><label for="antecedentes" class="form-label">Medicamentos, alergias o antecedentes relevantes</label><textarea class="form-control" id="antecedentes" name="antecedentes" rows="3" maxlength="600"></textarea></div>
+                  </div>
+                </fieldset>
+
+                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="aviso" name="aviso_privacidad" required><label class="form-check-label" for="aviso">Acepto que mis datos sean utilizados para responder esta solicitud y coordinar la atención veterinaria. *</label></div>
+                <div class="form-check mb-4"><input class="form-check-input" type="checkbox" id="novedades" name="novedades"><label class="form-check-label" for="novedades">Deseo recibir recordatorios y novedades de Veterinaria Huellitas.</label></div>
+                <div class="d-grid d-sm-flex gap-2"><button type="submit" class="btn btn-primary btn-lg">Enviar solicitud</button><button type="reset" class="btn btn-outline-secondary btn-lg">Limpiar formulario</button></div>
+                <p class="small text-body-secondary mt-3 mb-0">El envío de este formulario no confirma una cita. El equipo se comunicará contigo para verificar disponibilidad.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <aside class="col-lg-4">
+          <div class="card border-0 shadow-sm mb-4"><div class="card-body p-4"><span class="badge text-bg-primary mb-2">Contacto directo</span><h2 class="h4">Veterinaria Huellitas</h2><address class="mb-0">Av. Siempre Viva 123<br>Ciudad de México<br><br><strong>Teléfono:</strong><br><a href="tel:+525555555555">55 5555 5555</a><br><br><strong>Correo:</strong><br><a href="mailto:hola@huellitas.mx">hola@huellitas.mx</a></address></div></div>
+          <div class="card border-0 shadow-sm mb-4"><div class="card-header bg-dark text-white"><h2 class="h5 mb-0">Horario de atención</h2></div><ul class="list-group list-group-flush"><li class="list-group-item d-flex justify-content-between"><span>Lunes a viernes</span><strong>9:00–19:00</strong></li><li class="list-group-item d-flex justify-content-between"><span>Sábado</span><strong>9:00–15:00</strong></li><li class="list-group-item d-flex justify-content-between"><span>Domingo</span><strong>Urgencias</strong></li></ul></div>
+          <div class="card border-warning shadow-sm"><div class="card-body p-4"><h2 class="h5">Antes de venir</h2><p>Trae cartilla de vacunación, estudios anteriores y una lista de medicamentos. Utiliza transportadora o correa segura.</p><a class="btn btn-warning w-100" href="servicio1.html">Preparar la consulta</a></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bg-primary text-white py-5"><div class="container"><div class="row g-4 align-items-center"><div class="col-lg-8"><h2 class="display-6 fw-bold">¿Prefieres hablar con nosotros?</h2><p class="lead mb-lg-0">Llámanos y te orientaremos sobre el servicio más adecuado y la disponibilidad.</p></div><div class="col-lg-4 text-lg-end"><a class="btn btn-warning btn-lg" href="tel:+525555555555">Llamar al 55 5555 5555</a></div></div></div></section>
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-3"><div class="container"><div class="row g-4"><div class="col-md-5"><div class="d-flex align-items-center gap-2 mb-3"><img src="imagenes/logo-patita.svg" alt="" width="40" height="40"><h2 class="h4 mb-0">Veterinaria Huellitas</h2></div><p class="text-white-50">Cuidado cercano y profesional para quienes forman parte de tu familia.</p></div><div class="col-6 col-md-3"><h2 class="h5">Navegación</h2><ul class="list-unstyled"><li><a class="link-light" href="index.html">Inicio</a></li><li><a class="link-light" href="nosotros.html">Nosotros</a></li><li><a class="link-light" href="contacto.html">Contacto</a></li></ul></div><div class="col-6 col-md-4"><h2 class="h5">Contacto</h2><address class="text-white-50">Av. Siempre Viva 123, CDMX<br><a class="link-light" href="tel:+525555555555">55 5555 5555</a><br><a class="link-light" href="mailto:hola@huellitas.mx">hola@huellitas.mx</a></address></div></div><hr><p class="mb-0">© 2026 Veterinaria Huellitas · Sitio demostrativo</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
